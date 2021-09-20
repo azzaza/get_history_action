@@ -1,0 +1,134 @@
+
+
+
+.menu_opt{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 3px;
+    background-color: transparent;
+    display: flex;
+    border: none;
+    z-index: 45;
+    cursor: pointer;
+    top: 40px;
+
+}
+.menu_opt span{
+    background-color: black;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: all .6s;
+}
+.menu_opt span:nth-child(1){
+    top: 0;
+}
+.menu_opt span:nth-child(2){
+    top: 15px;
+}
+.menu_opt span:nth-child(3){
+    top: 15px;
+}
+.menu_opt span:nth-child(4){
+    top: 30px;
+} 
+.menu_opt.active span:nth-child(1){
+    left: 100px;
+}
+.menu_opt.active span:nth-child(2){
+    transform: rotate(45deg);
+}
+.menu_opt.active span:nth-child(3){
+    transform: rotate(315deg);
+}
+.menu_opt.active span:nth-child(4){
+    left: 100px;
+}
+
+
+
+
+
+
+.right_men{
+    
+    position: fixed;
+    right: 0;
+    right: -80vw;
+    top: 0;
+    height: 100vh;
+    background-color: white;
+    /* background-color: yellow; */
+    z-index: 40;
+    width: 30vw;
+    transition: 600ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: black 10px 10px 10px 10px ;
+}
+.right_men button{
+    border: #686868 solid 1px;
+    color: #686868;
+    background-color: transparent;
+}
+.right_men.active{
+   right: 0;
+}.dis_slider{
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    
+}
+
+.back{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right:10px;
+    top: 140px;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+.back img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+.theme_cont{
+    
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.them_button {
+    margin-left: 5px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+body.black{
+    background-color: black;
+    color: white;
+}
+body.black .menu_opt span {
+    background-color: white;
+}
+body.black .right_men{
+    box-shadow: white 10px 10px 10px 10px ;
+    background-color: black;
+}
+

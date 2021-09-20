@@ -1,0 +1,19 @@
+
+.company_head_cont{
+    display: flex;
+    align-items: center;
+    color: blue;
+}
+.company_head_cont h2{
+    margin-left: 8%;
+    height: 100v;
+}
+.company_inf_cont{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.price{
+    display: flex;
+    align-items: center;
+    
+}

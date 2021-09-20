@@ -1,0 +1,24 @@
+.compare{
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.compare_cont{
+    background-color: rgba(0, 0, 0,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+body.black .compare_cont{
+    background-color: rgba(255, 255, 255,0.4);
+}
+.name{
+    height: 36px;
+}
+.compare_cont img{
+    width: 50px;
+    height: 50px;
+}
+
